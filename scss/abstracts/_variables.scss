@@ -20,18 +20,17 @@ $dark-blue-200: hsl(238, 22%, 44%);
 
 // Use Cases
 $body-color: $dark-blue-100;
+$productive-description-color: $dark-blue-200;
 $footer-bg: $dark-blue-100;
 $cta-bg: $dark-blue-200;
 
 // Accent Color
 $bright-blue: hsl(224, 93%, 58%);
-$moderate-cyan-100: rgb(69,184,165);
-$moderate-cyan-200: hsl(170, 45%, 43%);
+$moderate-cyan-100: hsl(170, 45%, 43%);
 
 // Use Cases
 $btn-submit-bg: $bright-blue;
-$productive-link-color: $moderate-cyan-200;
-$productive-link-hover-color: $moderate-cyan-200;
+$productive-link-color: $moderate-cyan-100;
 
 // Neutral Color
 $light-grayish-blue: hsl(240, 75%, 98%);

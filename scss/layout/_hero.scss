@@ -1,7 +1,12 @@
 @use '../abstracts' as *;
 
 .hero {
-  padding: rem(90) 0;
+  padding-top: rem(90);
+  padding-bottom: rem(120);
+  background-image: url("../images/bg-curve-mobile.svg");
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .hero .container {

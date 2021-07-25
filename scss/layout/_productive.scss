@@ -1,0 +1,45 @@
+@use '../abstracts' as *;
+
+.productive {
+  padding: rem(90) 0;
+  background-color: $productive-bg;
+  overflow: hidden;
+}
+
+.productive .container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.productive__title {
+  margin-bottom: rem(28);
+  text-align: center;
+  font-size: rem(18);
+}
+
+.productive__description {
+  color: $productive-description-color;
+}
+
+.productive__link {
+  display: inline-block;
+  background-image: url("../images/icon-arrow.svg");
+  background-position: center right;
+  background-repeat: no-repeat;
+  border-bottom: rem(1) solid $productive-link-color;
+  padding-bottom: rem(5);
+  width: 19ch;
+  color: $productive-link-color;
+  font-size: rem(12);
+  
+  @include focus-visible;
+  @include on-event {
+    border-color: tint($productive-link-color, 25%);
+    background-image: url("../images/icon-arrow-hover.svg");
+    color: tint($productive-link-color, 25%);
+  }
+}
+
+.productive__image {
+  margin-bottom: rem(60);
+}

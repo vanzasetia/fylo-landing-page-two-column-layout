@@ -608,7 +608,12 @@ img {
 }
 
 .hero {
-  padding: 5.625rem 0;
+  padding-top: 5.625rem;
+  padding-bottom: 7.5rem;
+  background-image: url("../images/bg-curve-mobile.svg");
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .hero .container {
@@ -622,4 +627,50 @@ img {
 
 .hero__title {
   font-size: 1.5rem;
+}
+
+.productive {
+  padding: 5.625rem 0;
+  background-color: #f6f6fe;
+  overflow: hidden;
+}
+
+.productive .container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.productive__title {
+  margin-bottom: 1.75rem;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.productive__description {
+  color: #585989;
+}
+
+.productive__link {
+  display: inline-block;
+  background-image: url("../images/icon-arrow.svg");
+  background-position: center right;
+  background-repeat: no-repeat;
+  border-bottom: 0.0625rem solid #3c9f8f;
+  padding-bottom: 0.3125rem;
+  width: 19ch;
+  color: #3c9f8f;
+  font-size: 0.75rem;
+}
+.productive__link:focus-visible {
+  outline: 0.125rem dashed #51bdac;
+  outline-offset: 0.3125rem;
+}
+.productive__link:hover, .productive__link:active, .productive__link:focus {
+  border-color: #6db7ab;
+  background-image: url("../images/icon-arrow-hover.svg");
+  color: #6db7ab;
+}
+
+.productive__image {
+  margin-bottom: 3.75rem;
 }
