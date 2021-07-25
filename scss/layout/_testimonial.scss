@@ -24,6 +24,12 @@
   justify-content: flex-end;
   align-items: center;
   gap: rem(16);
+  
+  @supports not (gap: rem(16)) {
+    & > *:first-child {
+      margin-left: rem(16);
+    }
+  }
 }
 
 .testimonial__name,
