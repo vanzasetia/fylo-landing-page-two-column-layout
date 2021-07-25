@@ -14,6 +14,7 @@
   box-shadow: rem(3) rem(3) rem(6) rgba($dark-blue-200, 0.25);
   background-color: $btn-submit-bg;
   height: rem(40);
+  text-transform: capitalize;
   color: $white;
   
   @include focus-visible;
