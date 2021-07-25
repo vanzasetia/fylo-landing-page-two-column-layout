@@ -234,32 +234,37 @@
     </article>
     <!-- END OF Productive -->
     
+    <section class="cta" aria-labelledby="ctaTitle">
+      <div class="container">
+        <h2 class="cta__title" id="ctaTitle">
+          Get early access today
+        </h2>
+        <p class="cta__description">
+          It only takes a minute to sign up and our free starter tier is extremely generous. 
+          If you have any questions, our support team would be happy to help you.
+        </p>
+        <form class="form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+          <p class="hidden" aria-hidden="true">
+            <label for="botField">Don’t fill this out if you’re human: </label>
+            <input type="text" name="bot-field" id="botField" />
+          </p>
+          <label for="ctaEmail" class="form__control">
+            <input type="email" name="email" id="ctaEmail" class="form__email" required placeholder=" " aria-describedby="formText errorMessage">
+            <span class="form__text" id="formText">Enter your email...</span>
+            <div class="form__placeholder">
+              <div class="form__error-message form__error-message--white" id="errorMessage" aria-live="assertive">Please check your email.</div>
+            </div>
+          </label>
+          <button class="btn btn--submit" type="submit" aria-label="Submit email form.">Get Started For Free</button>
+        </form>
+      </div>
+    </section>
+    
   </main>
   <!-- END OF Main -->
   <!--
 
-  Stay productive, wherever you are
-
-  Never let location be an issue when accessing your files. Fylo has you 
-  covered for all of your file storage needs.
-
-  Securely share files and folders with friends, family and colleagues for 
-  live collaboration. No email attachments required!
-
-  See how Fylo works
-
-  Fylo has improved our team productivity by an order of magnitude. Since 
-  making the switch our team has become a well-oiled collaboration machine.
-
-  Kyle Burton
-  Founder & CEO, Huddle
-
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
-
-  Get Started For Free
+  
 
   Phone: +1-543-123-4567
   example@fylo.com

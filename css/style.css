@@ -499,6 +499,7 @@ img {
   top: 0.75rem;
   left: 1.25rem;
   opacity: 0.3;
+  color: #070439;
 }
 
 .form__email {
@@ -524,7 +525,10 @@ img {
 .form__error-message {
   display: none;
   color: red;
-  font-weight: 700;
+}
+
+.form__error-message--white {
+  color: white;
 }
 
 .form__email:not(:placeholder-shown) ~ .form__text {
@@ -722,4 +726,12 @@ img {
   height: 3.125rem;
   width: 3.125rem;
   border-radius: 50%;
+}
+
+.cta {
+  padding: 2.8125rem 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: #585989;
+  color: white;
 }

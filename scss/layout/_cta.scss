@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+.cta {
+  padding: rem(45) 0;
+  overflow: hidden;
+  text-align: center;
+  
+  @include set-background($cta-bg);
+}
