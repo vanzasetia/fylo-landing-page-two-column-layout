@@ -6,8 +6,16 @@
 
 .testimonial__card {
   border-radius: 0.5em;
+  box-shadow: 
+    rem(3) rem(3) rem(6) rgba($dark-blue-200, 0.1),
+    -#{rem(3)} -#{rem(3)} rem(6) rgba($dark-blue-200, 0.1)
+  ;
   background-color: $white;
   padding: rem(20);
+}
+
+.testimonial__blockquote {
+  margin: rem(18) 0;
 }
 
 .testimonial__figcaption {
@@ -15,12 +23,15 @@
   flex-direction: row-reverse;
   justify-content: flex-end;
   align-items: center;
-  gap: rem(20);
+  gap: rem(16);
 }
 
 .testimonial__name,
 .testimonial__job {
   margin: 0;
+}
+
+.testimonial__job {
   font-size: rem(12);
 }
 
@@ -29,7 +40,7 @@
 }
 
 .testimonial__image {
-  height: rem(40);
-  width: rem(40);
+  height: rem(50);
+  width: rem(50);
   border-radius: 50%;
 }
