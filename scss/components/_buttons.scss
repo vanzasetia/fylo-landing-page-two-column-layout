@@ -1,0 +1,23 @@
+@use '../abstracts' as *;
+
+.btn {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  font-family: $btn-ff;
+  font-weight: 700;
+}
+
+.btn--submit {
+  border: none;
+  border-radius: 0.25em;
+  box-shadow: rem(3) rem(3) rem(6) rgba($dark-blue-200, 0.25);
+  background-color: $btn-submit-bg;
+  height: rem(40);
+  color: $white;
+  
+  @include focus-visible;
+  @include on-event {
+    background-color: tint($btn-submit-bg, 40%);
+  }
+}

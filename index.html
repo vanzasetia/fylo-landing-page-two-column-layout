@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- SEO -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Securely Store All Your Files | Fylo" />
+  <meta
+    name="description"
+    content="Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with everyone."
+  />
+  <meta name="robots" content="index,follow" />
+  <meta name="author" content="Vanza Setia, venusbumi2@gmail.com" />
+  <meta name="url" content="https://fylocloudstorage.netlify.app/" />
+  <base href="/" />
+  <link rel="alternate" hreflang="en" href="/" />
+  <link
+    rel="canonical"
+    href="https://fylocloudstorage.netlify.app/"
+  />
+  <!-- Open Graph Protocol -->
+  <meta property="og:title" content="Securely Store All Your Files | Fylo" />
+  <meta
+    property="og:description"
+    content="Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with everyone."
+  />
+  <meta
+    property="og:image"
+    content="https://fylocloudstorage.netlify.app/design/desktop-preview.jpg"
+  />
+  <meta
+    property="og:url"
+    content="https://fylocloudstorage.netlify.app/"
+  />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Prevent Google From Showing Search Box -->
+  <meta name="google" content="nositelinkssearchbox" />
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org/",
+    "@type": "WebSite",
+    "name": "Fylo",
+    "alternateName": "Frontend Mentor | Fylo landing page with two column layout",
+    "url": "https://vanzafylo.netlify.app/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Fylo",
+    "description": "Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with everyone.",
+    "url": "https://vanzafylo.netlify.app/",
+    "logo": "https://vanzafylo.netlify.app/images/logo.svg",
+    "image": "https://vanzafylo.netlify.app/design/desktop-preview.jpg",
+    "alternateName": "Frontend Mentor | Fylo landing page with two column layout",
+    "telephone": "+1-543-123-4567",
+    "priceRange": "$$$",
+    "sameAs": [
+      "https://fylodarkthemevs.netlify.app/",
+      "https://fylo-data-storage-vs.netlify.app/"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "25130 Curt Trafficway",
+      "addressLocality": "Washington, United States",
+      "addressRegion": "WA",
+      "postalCode": "F-75002",
+      "addressCountry": "US"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4",
+      "reviewCount": "12900"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": "Kyle Burton",
+        "datePublished": "2021-07-22",
+        "reviewBody": "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
+        "name": "Founder & CEO, Huddle",
+        "reviewRating": {
+          "@type": "Rating",
+          "bestRating": "5",
+          "ratingValue": "4",
+          "worstRating": "1"
+        }
+      }
+    ]
+  }
+  </script>
+  <!-- Preload Font Family To Prevent Shifting Layout -->
+  <link rel="preload" href="./fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin >
+  <link rel="preload" href="./fonts/Raleway-Bold.woff2" as="font" type="font/woff2" crossorigin >
+  <link rel="preload" href="./fonts/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin >
+  <!-- Preload Hero Images -->
+  <link rel="preload" type="image/svg+xml"  href="./images/logo.svg" as="image" >
+  <link rel="preload" type="image/svg+xml"  href="./images/illustration-1.svg" as="image" >
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-config" content="images/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Minified CSS -->
+  <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
+  <!-- Mailgo -->
+  <!--
+  <script defer src="./js/vendor/mailgo.min.js"></script>
+  -->
+  <!-- Android Dev Tools -->
+  <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+  <script>
+    eruda.init();
+  </script>
+  <title>Securely Store All Your Files | Fylo</title>
+</head>
+<body dir="ltr">
+  <!-- Skip to main content -->
+  <a href="#main" class="sr-only" aria-current="page">main content.</a>
+  
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="header__home" aria-label="Fylo - Home">
+      <img src="./images/logo.svg" alt="Fylo." class="header__logo" width="170" height="50">
+      </a>
+      <nav class="header__navigation" aria-label="primary">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#" class="header__link">Features</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Team</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Sign In</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- END OF Header -->
+  
+  <!-- Main -->
+  <main id="main">
+    
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="container">
+        <div class="hero__text">
+          <h1 class="hero__title" id="heroTitle">
+            All your files in one secure location, accessible anywhere.
+          </h1>
+          <p class="hero__description">
+            Fylo stores your most important files in one secure location. 
+            Access them wherever you need, share and collaborate with friends, 
+            family, and co-workers.
+          </p>
+          <form class="form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+            <p class="hidden" aria-hidden="true">
+              <label for="botField">Don’t fill this out if you’re human: </label>
+              <input type="text" name="bot-field" id="botField" />
+            </p>
+            <label for="heroEmail" class="form__control">
+              <input type="email" name="email" id="heroEmail" class="form__email" required placeholder=" " aria-describedby="formText errorMessage">
+              <span class="form__text" id="formText">Enter your email...</span>
+              <div class="form__placeholder">
+                <div class="form__error-message" id="errorMessage" aria-live="assertive">Please check your email.</div>
+              </div>
+            </label>
+            <button class="btn btn--submit" type="submit" aria-label="Submit email form.">Get Started</button>
+          </form>
+        </div>
+        <img src="./images/illustration-1.svg" alt="" class="hero__image" aria-hidden="true" width="400" height="225">
+      </div>
+    </section>
+    <!-- END OF Hero -->
+    
+  </main>
+  <!-- END OF Main -->
+  <!--
+  
+  Team
+  Sign In
+
+  All your files in one secure location, accessible anywhere.
+
+  Fylo stores your most important files in one secure location. 
+  Access them wherever you need, share and collaborate with friends, 
+  family, and co-workers.
+
+  Get Started
+
+  Stay productive, wherever you are
+
+  Never let location be an issue when accessing your files. Fylo has you 
+  covered for all of your file storage needs.
+
+  Securely share files and folders with friends, family and colleagues for 
+  live collaboration. No email attachments required!
+
+  See how Fylo works
+
+  Fylo has improved our team productivity by an order of magnitude. Since 
+  making the switch our team has become a well-oiled collaboration machine.
+
+  Kyle Burton
+  Founder & CEO, Huddle
+
+  Get early access today
+
+  It only takes a minute to sign up and our free starter tier is extremely generous. 
+  If you have any questions, our support team would be happy to help you.
+
+  Get Started For Free
+
+  Phone: +1-543-123-4567
+  example@fylo.com
+
+  About Us
+  Jobs
+  Press
+  Blog
+
+  Contact Us
+  Terms
+  Privacy
+  -->
+</body>
+</html>

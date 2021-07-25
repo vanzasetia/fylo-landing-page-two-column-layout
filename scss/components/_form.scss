@@ -1,0 +1,68 @@
+@use '../abstracts' as *;
+
+$-red: rgb(255, 0, 0);
+
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form__control {
+  position: relative;
+}
+
+.form__text {
+  position: absolute;
+  top: rem(12);
+  left: rem(20);
+  opacity: 0.3;
+}
+
+.form__email {
+  display: block;
+  border: rem(1) solid $dark-blue-200;
+  border-radius: 0.25em;
+  padding: rem(6) rem(20);
+  padding-right: rem(30);
+  height: rem(40);
+  width: 100%;
+  font-size: rem(16);
+  
+  @include focus-visible;
+}
+
+.form__placeholder {
+  margin: rem(6) rem(20);
+  height: rem(14);
+}
+
+.form__error-message {
+  display: none;
+  color: $-red;
+  font-weight: 700;
+}
+
+// Form Validation with Pure CSS
+
+/// When the user start input a letter...
+.form__email:not(:placeholder-shown) ~ .form__text {
+  opacity: 0;
+}
+
+/// When the email is invalid...
+.form__email:focus:invalid {
+  border-color: $-red;
+}
+
+.form__email:focus:invalid ~ .form__placeholder .form__error-message {
+  display: block;
+}
+
+/// When the email is valid...
+.form__email:valid {
+  border-color: rgb(0,255,0);
+  background-image: url("../images/check-mark.svg");
+  background-position: right rem(8) center;
+  background-repeat: no-repeat;
+}

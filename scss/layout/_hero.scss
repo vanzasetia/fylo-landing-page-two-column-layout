@@ -1,0 +1,18 @@
+@use '../abstracts' as *;
+
+.hero {
+  padding: rem(90) 0;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.hero__text {
+  text-align: center;
+}
+
+.hero__title {
+  font-size: rem(24);
+}

@@ -1,0 +1,51 @@
+// Default style that I currently use on this project
+$default-html-font-size: 100% !default;
+$black: rgb(17, 17, 17) !default;
+$white: rgb(255, 255, 255) !default;
+$selection-bg: rgb(68,171,255) !default;
+$focus-visible-color: rgb(81,189,172) !default;
+
+// Styles for this specific project
+// Font family
+$raleway-font-family: 'Raleway';
+
+// Use Cases
+$headings-ff: $raleway-font-family;
+$btn-ff: $raleway-font-family;
+$header-navigation-ff: $raleway-font-family;
+
+// Primary Color
+$dark-blue-100: hsl(243, 87%, 12%);
+$dark-blue-200: hsl(238, 22%, 44%);
+
+// Use Cases
+$body-color: $dark-blue-100;
+$footer-bg: $dark-blue-100;
+$cta-bg: $dark-blue-200;
+
+// Accent Color
+$bright-blue: hsl(224, 93%, 58%);
+$moderate-cyan-100: rgb(69,184,165);
+$moderate-cyan-200: hsl(170, 45%, 43%);
+
+// Use Cases
+$btn-submit-bg: $bright-blue;
+$productive-link-color: $moderate-cyan-200;
+$productive-link-hover-color: $moderate-cyan-200;
+
+// Neutral Color
+$light-grayish-blue: hsl(240, 75%, 98%);
+$light-gray: hsl(0, 0%, 75%);
+
+// Use Cases
+$productive-bg: $light-grayish-blue;
+
+// Breakpoints
+// Note: If you user font-size setting is 16px, then this 'em' is equal to this in 'px'
+$breakpoints-up: (
+  'tiny': 20em, // => 320px
+);
+
+$breakpoints-down: (
+  'tiny': 19.9375em, // => 319px
+);

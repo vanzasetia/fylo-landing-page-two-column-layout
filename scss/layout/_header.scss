@@ -1,0 +1,42 @@
+@use '../abstracts' as *;
+
+.header {
+  padding: rem(20) 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__home {
+  flex-basis: rem(100);
+  
+  @include focus-visible;
+}
+
+.header__navigation {
+  font-family: $header-navigation-ff;
+}
+
+.header__list {
+  display: flex;
+  gap: rem(16);
+  
+  @supports not (gap: rem(16)) {
+    & > *:not(:last-child) {
+      margin-right: rem(16);
+    }
+  }
+}
+
+.header__link {
+  padding-bottom: rem(3);
+  color: inherit;
+  
+  @include focus-visible;
+  @include on-event {
+    border-bottom: rem(1) solid $dark-blue-100;
+  }
+}
