@@ -345,6 +345,13 @@ template {
   src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
 }
 @font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: optional;
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
+}
+@font-face {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
@@ -673,4 +680,38 @@ img {
 
 .productive__image {
   margin-bottom: 3.75rem;
+}
+
+.testimonial {
+  margin: 2.5rem 0;
+}
+
+.testimonial__card {
+  border-radius: 0.5em;
+  background-color: white;
+  padding: 1.25rem;
+}
+
+.testimonial__figcaption {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.testimonial__name,
+.testimonial__job {
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+.testimonial__name {
+  font-weight: 700;
+}
+
+.testimonial__image {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
 }

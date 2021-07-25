@@ -1,0 +1,35 @@
+@use '../abstracts' as *;
+
+.testimonial {
+  margin: rem(40) 0;
+}
+
+.testimonial__card {
+  border-radius: 0.5em;
+  background-color: $white;
+  padding: rem(20);
+}
+
+.testimonial__figcaption {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  gap: rem(20);
+}
+
+.testimonial__name,
+.testimonial__job {
+  margin: 0;
+  font-size: rem(12);
+}
+
+.testimonial__name {
+  font-weight: 700;
+}
+
+.testimonial__image {
+  height: rem(40);
+  width: rem(40);
+  border-radius: 50%;
+}
