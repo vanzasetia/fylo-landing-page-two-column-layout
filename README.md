@@ -1,10 +1,12 @@
 # Fylo Landing Page with Two Column Layout
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Difficulty-Junior-brightgreen?style=for-the-badge" alt="Difficulty">
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/vanzasetia/fylo-landing-page-two-column-layout?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Difficulty-Junior-brightgreen?style=for-the-badge&logo=frontendmentor" alt="Difficulty">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/vanzasetia/fylo-landing-page-two-column-layout?style=for-the-badge&logo=github">
   <a href="https://twitter.com/vanzasetia" target="_blank"><img src="https://img.shields.io/twitter/follow/vanzasetia?logo=twitter&style=for-the-badge" alt="Twitter followers." /></a>
-  <img alt="Netlify" src="https://img.shields.io/netlify/00c5a215-32c0-4e0b-8112-4f2b6616b0b2?style=for-the-badge">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/vanzasetia/fylo-landing-page-two-column-layout?style=for-the-badge&logo=git">
+  <img alt="Netlify" src="https://img.shields.io/netlify/00c5a215-32c0-4e0b-8112-4f2b6616b0b2?style=for-the-badge&logo=netlify">
+  <img alt="W3C Validation" src="https://img.shields.io/w3c-validation/html?label=HTML%20W3C&style=for-the-badge&targetUrl=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fshowsource%3Dyes%26showoutline%3Dyes%26showimagereport%3Dyes%26doc%3Dhttps%253A%252F%252Ffylocloudstorage.netlify.app%252F&logo=w3c">
 </p>
 <p>
   <a href="http://jigsaw.w3.org/css-validator/check/referer">
