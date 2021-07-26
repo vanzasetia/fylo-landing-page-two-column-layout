@@ -103,21 +103,33 @@
       }
     </script>
     <!-- Preload Font Family To Prevent Shifting Layout -->
-    <!--
-  <link rel="preload" href="./fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin >
-  <link rel="preload" href="./fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin >
-  <link rel="preload" href="./fonts/Raleway-Bold.woff2" as="font" type="font/woff2" crossorigin >
-  <link rel="preload" href="./fonts/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin >
-  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
+      rel="preload"
+      href="./fonts/OpenSans-Regular.woff2"
+      as="font"
+      type="font/woff2"
       crossorigin
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="./fonts/OpenSans-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/Raleway-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/Raleway-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
     <!-- Preload Images -->
     <link
@@ -184,9 +196,7 @@
     <!-- Minified CSS -->
     <link rel="stylesheet" href="./css/style.min.css" />
     <!-- Mailgo -->
-    <!--
-  <script defer src="./js/vendor/mailgo.min.js"></script>
-  -->
+    <script defer src="./js/vendor/mailgo.min.js"></script>
     <title>Securely Store All Your Files | Fylo</title>
   </head>
   <body dir="ltr">
@@ -448,7 +458,7 @@
     <!-- END OF Main -->
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <div class="container">
         <a
           href="index.html"
