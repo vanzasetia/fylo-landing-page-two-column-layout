@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/Difficulty-Junior-brightgreen?style=for-the-badge" alt="Difficulty">
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/vanzasetia/fylo-landing-page-two-column-layout?style=for-the-badge">
   <a href="https://twitter.com/vanzasetia" target="_blank"><img src="https://img.shields.io/twitter/follow/vanzasetia?logo=twitter&style=for-the-badge" alt="Twitter followers." /></a>
-  <img alt="Netlify" src="https://img.shields.io/netlify/?style=for-the-badge">
+  <img alt="Netlify" src="https://img.shields.io/netlify/00c5a215-32c0-4e0b-8112-4f2b6616b0b2?style=for-the-badge">
 </p>
 <p>
   <a href="http://jigsaw.w3.org/css-validator/check/referer">
