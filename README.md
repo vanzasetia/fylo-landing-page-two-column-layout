@@ -18,8 +18,8 @@
 
 ## Feedback and Live Review
 * [🌍 Live Review](https://fylocloudstorage.netlify.app/)
-* [👉 Give feedback on Frontend Mentor platform]()
-* [🐦 Give Feedback on Twitter]()
+* [👉 Give feedback on Frontend Mentor platform](https://www.frontendmentor.io/solutions/fylo-two-columns-layout-landing-page-html5-css3-sass-mailgo-eB98lZ5w1)
+* [🐦 Give Feedback on Twitter](https://twitter.com/vanzasetia/status/1419612084279472130?s=19)
 
 ## Table of contents
 - [Story](#the-story-when-doing-this-challenge)
