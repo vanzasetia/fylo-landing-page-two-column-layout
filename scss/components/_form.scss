@@ -12,7 +12,7 @@ $-red: rgb(255, 0, 0);
   position: relative;
 }
 
-.form__text {
+.form__label {
   position: absolute;
   top: rem(12);
   left: rem(20);
@@ -50,7 +50,7 @@ $-red: rgb(255, 0, 0);
 // Form Validation with Pure CSS
 
 /// When the user start input a letter...
-.form__email:not(:placeholder-shown) ~ .form__text {
+.form__email:not(:placeholder-shown) ~ .form__label {
   opacity: 0;
 }
 

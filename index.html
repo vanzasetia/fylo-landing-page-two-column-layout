@@ -168,16 +168,16 @@
           </p>
           <form class="form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
             <p class="hidden" aria-hidden="true">
-              <label for="botField">Don’t fill this out if you’re human: </label>
-              <input type="text" name="bot-field" id="botField" />
+              <label for="botField-1">Don’t fill this out if you’re human: </label>
+              <input type="text" name="bot-field" id="botField-1" />
             </p>
-            <label for="heroEmail" class="form__control">
-              <input type="email" name="email" id="heroEmail" class="form__email" required placeholder=" " aria-describedby="formText errorMessage">
-              <span class="form__text" id="formText">Enter your email...</span>
-              <div class="form__placeholder">
-                <div class="form__error-message" id="errorMessage" aria-live="assertive">Please check your email.</div>
-              </div>
-            </label>
+            <div class="form__control">
+            <input type="email" name="email" id="heroEmail" class="form__email" required placeholder=" " aria-describedby="formLabel-1 errorMessage-1">
+            <label for="heroEmail" class="form__label" id="formLabel-1">Enter your email...</label>
+            <div class="form__placeholder">
+              <div class="form__error-message form__error-message--white" id="errorMessage-1" aria-live="assertive">Please check your email.</div>
+            </div>
+          </div>
             <button class="btn btn--submit" type="submit" aria-label="Submit email form.">Get Started</button>
           </form>
         </div>
@@ -246,16 +246,16 @@
         </p>
         <form class="form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
           <p class="hidden" aria-hidden="true">
-            <label for="botField">Don’t fill this out if you’re human: </label>
-            <input type="text" name="bot-field" id="botField" />
+            <label for="botField-2">Don’t fill this out if you’re human: </label>
+            <input type="text" name="bot-field" id="botField-2" />
           </p>
-          <label for="ctaEmail" class="form__control">
-            <input type="email" name="email" id="ctaEmail" class="form__email" required placeholder=" " aria-describedby="formText errorMessage">
-            <span class="form__text" id="formText">Enter your email...</span>
+          <div class="form__control">
+            <input type="email" name="email" id="ctaEmail" class="form__email" required placeholder=" " aria-describedby="formLabel-2 errorMessage-2">
+            <label for="ctaEmail" class="form__label" id="formLabel-2">Enter your email...</label>
             <div class="form__placeholder">
-              <div class="form__error-message form__error-message--white" id="errorMessage" aria-live="assertive">Please check your email.</div>
+              <div class="form__error-message form__error-message--white" id="errorMessage-2" aria-live="assertive">Please check your email.</div>
             </div>
-          </label>
+          </div>
           <button class="btn btn--submit" type="submit" aria-label="Submit email form.">Get Started For Free</button>
         </form>
       </div>

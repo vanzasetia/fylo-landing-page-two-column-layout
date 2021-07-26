@@ -494,7 +494,7 @@ img {
   position: relative;
 }
 
-.form__text {
+.form__label {
   position: absolute;
   top: 0.75rem;
   left: 1.25rem;
@@ -531,7 +531,7 @@ img {
   color: white;
 }
 
-.form__email:not(:placeholder-shown) ~ .form__text {
+.form__email:not(:placeholder-shown) ~ .form__label {
   opacity: 0;
 }
 
