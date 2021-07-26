@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fylocloudstorage.netlify.app/sitemap.xml
