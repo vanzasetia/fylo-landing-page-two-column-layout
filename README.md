@@ -63,11 +63,11 @@ The `style-guide.md` said that you only need an **Open Sans** font family with 4
 ### CTA Section 
 When I started building the mobile layout, I realized that the layout on mobile design wasn't consistent. This section had less width than the other section. So, I didn't follow the mobile design, I was just using the same `.container` as the other section had. That way, the layout is always consistent even in mobile devices 👍.
 
-### FOOTER
+### Footer
 For the footer, I use `grid` to make them three columns on desktop view.
 
 ## What I Learned
-* Using `rel="preload"` and `font-display: optional` to prevent shifting layout on font family. But I used `font-display: swap` since if you import it using `link` tags, there this `&display=swap`.
+* Using `rel="preload"` and `font-display: optional` to prevent shifting layout on font family. But I used `font-display: swap` since if you import it using `link` tags, there is this `&display=swap`.
 * I learned that using `woff2` font format is better than using `ttf`. The reason for that is because `woff2` has smaller file size which is equal to better performance 🚀.
 * I learned that `img` must have `width` and `height` attributes to prevent jumping layout.
 * I also found out a link that explain, why you need `role="contentinfo"` on `footer`. The link in [Useful Resources section](#useful-resources).
