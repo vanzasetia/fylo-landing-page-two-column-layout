@@ -39,4 +39,8 @@
   @include on-event {
     border-bottom: rem(1) solid $dark-blue-100;
   }
+  
+  @include breakpoint-down('tiny') {
+    font-size: rem(12);
+  }
 }
