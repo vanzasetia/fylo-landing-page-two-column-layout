@@ -6,6 +6,35 @@ $-red: rgb(255, 0, 0);
   display: flex;
   flex-direction: column;
   text-align: left;
+  
+  @include breakpoint-up("small") {
+    flex-direction: row;
+  }
+}
+
+.form--cta {
+  
+  @include breakpoint-up("small") {
+    flex-direction: column;
+    width: 40%;
+    text-align: left;
+  }
+}
+
+.form--cta .btn--submit {
+  
+  @include breakpoint-up("small") {
+    flex-basis: rem(50);
+    width: rem(200);
+  }
+}
+
+.form--cta .form__email {
+  
+  @include breakpoint-up("small") {
+    flex-basis: 100%;
+    width: 100%;
+  }
 }
 
 .form__control {
@@ -18,6 +47,10 @@ $-red: rgb(255, 0, 0);
   left: rem(20);
   opacity: 0.3;
   color: $dark-blue-100;
+  
+  @include breakpoint-up("small") {
+    top: rem(16);
+  }
 }
 
 .form__email {
@@ -31,6 +64,11 @@ $-red: rgb(255, 0, 0);
   font-size: rem(16);
   
   @include focus-visible;
+  @include breakpoint-up("small") {
+    margin-right: rem(20);
+    height: rem(50);
+    width: rem(300);
+  }
 }
 
 .form__placeholder {

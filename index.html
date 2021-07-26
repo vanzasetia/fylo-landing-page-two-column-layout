@@ -1,332 +1,563 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- SEO -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="title" content="Securely Store All Your Files | Fylo" />
-  <meta
-    name="description"
-    content="Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with everyone."
-  />
-  <meta name="robots" content="index,follow" />
-  <meta name="author" content="Vanza Setia, venusbumi2@gmail.com" />
-  <meta name="url" content="https://fylocloudstorage.netlify.app/" />
-  <base href="/" />
-  <link rel="alternate" hreflang="en" href="/" />
-  <link
-    rel="canonical"
-    href="https://fylocloudstorage.netlify.app/"
-  />
-  <!-- Open Graph Protocol -->
-  <meta property="og:title" content="Securely Store All Your Files | Fylo" />
-  <meta
-    property="og:description"
-    content="Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with everyone."
-  />
-  <meta
-    property="og:image"
-    content="https://fylocloudstorage.netlify.app/design/desktop-preview.jpg"
-  />
-  <meta
-    property="og:url"
-    content="https://fylocloudstorage.netlify.app/"
-  />
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- Prevent Google From Showing Search Box -->
-  <meta name="google" content="nositelinkssearchbox" />
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "http://schema.org/",
-    "@type": "WebSite",
-    "name": "Fylo",
-    "alternateName": "Frontend Mentor | Fylo landing page with two column layout",
-    "url": "https://vanzafylo.netlify.app/"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Fylo",
-    "description": "Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with everyone.",
-    "url": "https://vanzafylo.netlify.app/",
-    "logo": "https://vanzafylo.netlify.app/images/logo.svg",
-    "image": "https://vanzafylo.netlify.app/design/desktop-preview.jpg",
-    "alternateName": "Frontend Mentor | Fylo landing page with two column layout",
-    "telephone": "+1-543-123-4567",
-    "priceRange": "$$$",
-    "sameAs": [
-      "https://fylodarkthemevs.netlify.app/",
-      "https://fylo-data-storage-vs.netlify.app/"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "25130 Curt Trafficway",
-      "addressLocality": "Washington, United States",
-      "addressRegion": "WA",
-      "postalCode": "F-75002",
-      "addressCountry": "US"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4",
-      "reviewCount": "12900"
-    },
-    "review": [
+  <head>
+    <!-- SEO -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="title"
+      content="Securely Store All Your Files | Fylo"
+    />
+    <meta
+      name="description"
+      content="Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with everyone."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="Vanza Setia, venusbumi2@gmail.com" />
+    <meta
+      name="url"
+      content="https://fylocloudstorage.netlify.app/"
+    />
+    <base href="/" />
+    <link
+      rel="canonical"
+      href="https://fylocloudstorage.netlify.app/"
+    />
+    <!-- Open Graph Protocol -->
+    <meta
+      property="og:title"
+      content="Securely Store All Your Files | Fylo"
+    />
+    <meta
+      property="og:description"
+      content="Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with everyone."
+    />
+    <meta
+      property="og:image"
+      content="https://fylocloudstorage.netlify.app/design/desktop-preview.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://fylocloudstorage.netlify.app/"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Prevent Google From Showing Search Box -->
+    <meta name="google" content="nositelinkssearchbox" />
+    <!-- Schema.org -->
+    <script type="application/ld+json">
       {
-        "@type": "Review",
-        "author": "Kyle Burton",
-        "datePublished": "2021-07-22",
-        "reviewBody": "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
-        "name": "Founder & CEO, Huddle",
-        "reviewRating": {
-          "@type": "Rating",
-          "bestRating": "5",
-          "ratingValue": "4",
-          "worstRating": "1"
-        }
+        "@context": "http://schema.org/",
+        "@type": "WebSite",
+        "name": "Fylo",
+        "alternateName": "Frontend Mentor | Fylo landing page with two column layout",
+        "url": "https://vanzafylo.netlify.app/"
       }
-    ]
-  }
-  </script>
-  <!-- Preload Font Family To Prevent Shifting Layout -->
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Fylo",
+        "description": "Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with everyone.",
+        "url": "https://vanzafylo.netlify.app/",
+        "logo": "https://vanzafylo.netlify.app/images/logo.svg",
+        "image": "https://vanzafylo.netlify.app/design/desktop-preview.jpg",
+        "alternateName": "Frontend Mentor | Fylo landing page with two column layout",
+        "telephone": "+1-543-123-4567",
+        "priceRange": "$$$",
+        "sameAs": [
+          "https://fylodarkthemevs.netlify.app/",
+          "https://fylo-data-storage-vs.netlify.app/"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "25130 Curt Trafficway",
+          "addressLocality": "Washington, United States",
+          "addressRegion": "WA",
+          "postalCode": "F-75002",
+          "addressCountry": "US"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4",
+          "reviewCount": "12900"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": "Kyle Burton",
+            "datePublished": "2021-07-22",
+            "reviewBody": "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
+            "name": "Founder & CEO, Huddle",
+            "reviewRating": {
+              "@type": "Rating",
+              "bestRating": "5",
+              "ratingValue": "4",
+              "worstRating": "1"
+            }
+          }
+        ]
+      }
+    </script>
+    <!-- Preload Font Family To Prevent Shifting Layout -->
+    <!--
   <link rel="preload" href="./fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin >
   <link rel="preload" href="./fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin >
   <link rel="preload" href="./fonts/Raleway-Bold.woff2" as="font" type="font/woff2" crossorigin >
   <link rel="preload" href="./fonts/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin >
-  <!-- Preload Hero Images -->
-  <link rel="preload" type="image/svg+xml"  href="./images/logo.svg" as="image" >
-  <link rel="preload" type="image/svg+xml"  href="./images/illustration-1.svg" as="image" >
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-  <link rel="manifest" href="images/site.webmanifest">
-  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="msapplication-TileColor" content="#2d89ef">
-  <meta name="msapplication-config" content="images/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./css/style.css">
-  <!-- Minified CSS -->
-  <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
-  <!-- Mailgo -->
-  <!--
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Preload Hero Images -->
+    <link
+      rel="preload"
+      type="image/svg+xml"
+      href="./images/logo.svg"
+      as="image"
+    />
+    <link
+      rel="preload"
+      type="image/svg+xml"
+      href="./images/illustration-1.svg"
+      as="image"
+    />
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta
+      name="msapplication-config"
+      content="images/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Minified CSS -->
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <!-- Mailgo -->
+    <!--
   <script defer src="./js/vendor/mailgo.min.js"></script>
   -->
-  <!-- Android Dev Tools -->
-  <script src="//cdn.jsdelivr.net/npm/eruda"></script>
-  <script>
-    eruda.init();
-  </script>
-  <title>Securely Store All Your Files | Fylo</title>
-</head>
-<body dir="ltr">
-  <!-- Skip to main content -->
-  <a href="#main" class="sr-only">main content.</a>
-  
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <a href="index.html" class="header__home" aria-label="Fylo - Home">
-      <img src="./images/logo.svg" alt="Fylo." class="header__logo" width="170" height="50">
-      </a>
-      <nav class="header__navigation" aria-label="primary">
-        <ul class="header__list">
-          <li class="header__item">
-            <a href="#" class="header__link">Features</a>
-          </li>
-          <li class="header__item">
-            <a href="#" class="header__link">Team</a>
-          </li>
-          <li class="header__item">
-            <a href="#" class="header__link">Sign In</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <!-- END OF Header -->
-  
-  <!-- Main -->
-  <main id="main">
-    
-    <!-- Hero -->
-    <section class="hero" aria-labelledby="heroTitle">
+    <title>Securely Store All Your Files | Fylo</title>
+  </head>
+  <body dir="ltr">
+    <!-- Skip to main content -->
+    <a href="#main" class="sr-only">main content.</a>
+
+    <!-- Header -->
+    <header class="header">
       <div class="container">
-        <div class="hero__text">
-          <h1 class="hero__title" id="heroTitle">
-            All your files in one secure location, accessible anywhere.
-          </h1>
-          <p class="hero__description">
-            Fylo stores your most important files in one secure location. 
-            Access them wherever you need, share and collaborate with friends, 
-            family, and co-workers.
-          </p>
-          <form class="form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+        <a
+          href="index.html"
+          class="header__home"
+          aria-label="Fylo - Home"
+        >
+          <img
+            src="./images/logo.svg"
+            alt="Fylo."
+            class="header__logo"
+            width="170"
+            height="50"
+          />
+        </a>
+        <nav class="header__navigation" aria-label="primary">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link">Features</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Team</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Sign In</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- END OF Header -->
+
+    <!-- Main -->
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="container">
+          <div class="hero__text">
+            <h1 class="hero__title" id="heroTitle">
+              All your files in one secure location, accessible
+              anywhere.
+            </h1>
+            <p class="hero__description">
+              Fylo stores your most important files in one secure
+              location. Access them wherever you need, share and
+              collaborate with friends, family, and co-workers.
+            </p>
+            <form
+              class="form"
+              name="contact"
+              method="POST"
+              netlify-honeypot="bot-field"
+              data-netlify="true"
+            >
+              <p class="hidden" aria-hidden="true">
+                <label for="botField-1"
+                  >Don’t fill this out if you’re human:
+                </label>
+                <input type="text" name="bot-field" id="botField-1" />
+              </p>
+              <div class="form__control">
+                <input
+                  type="email"
+                  name="email"
+                  id="heroEmail"
+                  class="form__email"
+                  required
+                  placeholder=" "
+                  aria-describedby="formLabel-1 errorMessage-1"
+                />
+                <label
+                  for="heroEmail"
+                  class="form__label"
+                  id="formLabel-1"
+                  >Enter your email...</label
+                >
+                <div class="form__placeholder">
+                  <div
+                    class="form__error-message"
+                    id="errorMessage-1"
+                    aria-live="assertive"
+                  >
+                    Please check your email.
+                  </div>
+                </div>
+              </div>
+              <button
+                class="btn btn--submit"
+                type="submit"
+                aria-label="Submit email form."
+              >
+                Get Started
+              </button>
+            </form>
+          </div>
+          <img
+            src="./images/illustration-1.svg"
+            alt=""
+            class="hero__image"
+            aria-hidden="true"
+            width="400"
+            height="225"
+          />
+        </div>
+      </section>
+      <!-- END OF Hero -->
+
+      <!-- Productive -->
+      <article class="productive">
+        <div class="container">
+          <div class="productive__text">
+            <h2 class="productive__title">
+              Stay productive, wherever you are
+            </h2>
+            <p class="productive__description">
+              Never let location be an issue when accessing your
+              files. Fylo has you covered for all of your file storage
+              needs.
+            </p>
+            <p class="productive__description">
+              Securely share files and folders with friends, family
+              and colleagues for live collaboration. No email
+              attachments required!
+            </p>
+            <a href="#" class="productive__link">
+              See how Fylo works
+            </a>
+            <!-- Testimonial -->
+            <section
+              class="testimonial"
+              aria-labelledby="testimonialTitle"
+            >
+              <h3 class="sr-only" id="testimonialTitle">
+                Don't just believe on what we say, it has been proven
+                by ten of thousands people. Here is a review from CEO
+                of Huddle.
+              </h3>
+              <div class="testimonial__card">
+                <img
+                  src="./images/left-quote.png"
+                  alt=""
+                  class="testimonial__quotes"
+                  aria-hidden="true"
+                  width="24"
+                  height="24"
+                />
+                <figure class="testimonial__person">
+                  <blockquote class="testimonial__blockquote">
+                    Fylo has improved our team productivity by an
+                    order of magnitude. Since making the switch our
+                    team has become a well-oiled collaboration
+                    machine.
+                  </blockquote>
+                  <figcaption class="testimonial__figcaption">
+                    <div class="testimonial__info">
+                      <p class="testimonial__name">Kyle Burton</p>
+                      <p class="testimonial__job">
+                        Founder & CEO, Huddle
+                      </p>
+                    </div>
+                    <img
+                      src="./images/avatar-testimonial.jpg"
+                      alt="Kyle Burton."
+                      class="testimonial__image"
+                      width="50"
+                      height="50"
+                    />
+                  </figcaption>
+                </figure>
+              </div>
+            </section>
+            <!-- END OF Testimonial -->
+          </div>
+          <img
+            src="./images/illustration-2.svg"
+            alt=""
+            class="productive__image"
+            aria-hidden="true"
+            width="320"
+            height="240"
+          />
+        </div>
+      </article>
+      <!-- END OF Productive -->
+
+      <!-- CTA -->
+      <section class="cta" aria-labelledby="ctaTitle">
+        <div class="container">
+          <div class="cta__text">
+            <h2 class="cta__title" id="ctaTitle">
+              Get early access today
+            </h2>
+            <p class="cta__description">
+              It only takes a minute to sign up and our free starter
+              tier is extremely generous. If you have any questions,
+              our support team would be happy to help you.
+            </p>
+          </div>
+          <form
+            class="form form--cta"
+            name="contact"
+            method="POST"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+          >
             <p class="hidden" aria-hidden="true">
-              <label for="botField-1">Don’t fill this out if you’re human: </label>
-              <input type="text" name="bot-field" id="botField-1" />
+              <label for="botField-2"
+                >Don’t fill this out if you’re human:
+              </label>
+              <input type="text" name="bot-field" id="botField-2" />
             </p>
             <div class="form__control">
-            <input type="email" name="email" id="heroEmail" class="form__email" required placeholder=" " aria-describedby="formLabel-1 errorMessage-1">
-            <label for="heroEmail" class="form__label" id="formLabel-1">Enter your email...</label>
-            <div class="form__placeholder">
-              <div class="form__error-message form__error-message--white" id="errorMessage-1" aria-live="assertive">Please check your email.</div>
+              <input
+                type="email"
+                name="email"
+                id="ctaEmail"
+                class="form__email"
+                required
+                placeholder=" "
+                aria-describedby="formLabel-2 errorMessage-2"
+              />
+              <label
+                for="ctaEmail"
+                class="form__label"
+                id="formLabel-2"
+                >Enter your email...</label
+              >
+              <div class="form__placeholder">
+                <div
+                  class="
+                    form__error-message form__error-message--white
+                  "
+                  id="errorMessage-2"
+                  aria-live="assertive"
+                >
+                  Please check your email.
+                </div>
+              </div>
             </div>
-          </div>
-            <button class="btn btn--submit" type="submit" aria-label="Submit email form.">Get Started</button>
+            <button
+              class="btn btn--submit"
+              type="submit"
+              aria-label="Submit email form."
+            >
+              Get Started For Free
+            </button>
           </form>
         </div>
-        <img src="./images/illustration-1.svg" alt="" class="hero__image" aria-hidden="true" width="400" height="225">
-      </div>
-    </section>
-    <!-- END OF Hero -->
-    
-    <!-- Productive -->
-    <article class="productive">
+      </section>
+      <!-- END OF CTA -->
+    </main>
+    <!-- END OF Main -->
+
+    <!-- Footer -->
+    <footer class="footer">
       <div class="container">
-        <div class="productive__text">
-          <h2 class="productive__title">
-            Stay productive, wherever you are
-          </h2>
-          <p class="productive__description">
-            Never let location be an issue when accessing your files. Fylo has you 
-            covered for all of your file storage needs.
-          </p>
-          <p class="productive__description">
-            Securely share files and folders with friends, family and colleagues for 
-            live collaboration. No email attachments required!
-          </p>
-          <a href="#" class="productive__link">
-            See how Fylo works
-          </a>
-          <!-- Testimonial -->
-          <section class="testimonial" aria-labelledby="testimonialTitle">
-            <h3 class="sr-only" id="testimonialTitle">
-              Don't just believe on what we say, it has been proven by
-             ten of thousands people. Here is a review from CEO of Huddle.
-            </h3>
-            <div class="testimonial__card">
-              <img src="./images/left-quote.png" alt="" class="testimonial__quotes" aria-hidden="true" width="24" height="24">
-              <figure class="testimonial__person">
-                <blockquote class="testimonial__blockquote">
-                  Fylo has improved our team productivity by an order of magnitude. Since 
-                  making the switch our team has become a well-oiled collaboration machine.
-                </blockquote>
-                <figcaption class="testimonial__figcaption">
-                  <div class="testimonial__info">
-                    <p class="testimonial__name">Kyle Burton</p>
-                    <p class="testimonial__job">Founder & CEO, Huddle</p>
-                  </div>
-                  <img src="./images/avatar-testimonial.jpg" alt="Kyle Burton." class="testimonial__image" width="50" height="50">
-                </figcaption>
-              </figure>
-            </div>
-          </section>
-          <!-- END OF Testimonial -->
+        <a
+          href="index.html"
+          class="footer__home"
+          aria-label="Fylo - Home"
+        >
+          <img
+            src="./images/logo-white.svg"
+            alt="Fylo."
+            class="footer__logo"
+            width="170"
+            height="50"
+          />
+        </a>
+        <div class="footer__container">
+          <ul class="info">
+            <li class="info__item">
+              <img
+                src="./images/icon-phone.svg"
+                alt=""
+                class="info__icon"
+                aria-hidden="true"
+                width="18"
+                height="18"
+              />
+              <address class="info__address">
+                <a href="tel:+15431234567" class="info__link"
+                  >Phone: +1-543-123-4567</a
+                >
+              </address>
+            </li>
+            <li class="info__item">
+              <img
+                src="./images/icon-email.svg"
+                alt=""
+                class="info__icon"
+                aria-hidden="true"
+                width="18"
+                height="18"
+              />
+              <address class="info__address">
+                <a href="mailto:example@fylo.com" class="info__link"
+                  >example@fylo.com</a
+                >
+              </address>
+            </li>
+          </ul>
+          <nav class="footer__navigation" aria-label="secondary">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">About Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Jobs</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Press</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Blog</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="social">
+            <li class="social__item">
+              <a
+                href="https://www.facebook.com"
+                class="social__link"
+                aria-label="Facebook."
+                rel="noopener noreferrer"
+                target="_blank"
+              ></a>
+            </li>
+            <li class="social__item">
+              <a
+                href="https://www.twitter.com"
+                class="social__link"
+                aria-label="Twitter."
+                rel="noopener noreferrer"
+                target="_blank"
+              ></a>
+            </li>
+            <li class="social__item">
+              <a
+                href="https://www.instagram.com"
+                class="social__link"
+                aria-label="Instagram."
+                rel="noopener noreferrer"
+                target="_blank"
+              ></a>
+            </li>
+          </ul>
         </div>
-        <img src="./images/illustration-2.svg" alt="" class="productive__image" aria-hidden="true" width="320" height="240">
-      </div>
-    </article>
-    <!-- END OF Productive -->
-    
-    <!-- CTA -->
-    <section class="cta" aria-labelledby="ctaTitle">
-      <div class="container">
-        <h2 class="cta__title" id="ctaTitle">
-          Get early access today
-        </h2>
-        <p class="cta__description">
-          It only takes a minute to sign up and our free starter tier is extremely generous. 
-          If you have any questions, our support team would be happy to help you.
+        <!-- Flaticon Attribute -->
+        <p class="attribute">
+          Left quote icon made by
+          <a
+            href="https://www.freepik.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Freepik"
+            class="attribute__link"
+            >Freepik</a
+          >
+          from
+          <cite class="attribute__cite"
+            ><a
+              class="attribute__link"
+              href="https://www.flaticon.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Flaticon"
+              >www.flaticon.com</a
+            ></cite
+          >
         </p>
-        <form class="form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-          <p class="hidden" aria-hidden="true">
-            <label for="botField-2">Don’t fill this out if you’re human: </label>
-            <input type="text" name="bot-field" id="botField-2" />
-          </p>
-          <div class="form__control">
-            <input type="email" name="email" id="ctaEmail" class="form__email" required placeholder=" " aria-describedby="formLabel-2 errorMessage-2">
-            <label for="ctaEmail" class="form__label" id="formLabel-2">Enter your email...</label>
-            <div class="form__placeholder">
-              <div class="form__error-message form__error-message--white" id="errorMessage-2" aria-live="assertive">Please check your email.</div>
-            </div>
-          </div>
-          <button class="btn btn--submit" type="submit" aria-label="Submit email form.">Get Started For Free</button>
-        </form>
       </div>
-    </section>
-    <!-- END OF CTA -->
-    
-  </main>
-  <!-- END OF Main -->
-  
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <a href="index.html" class="footer__home" aria-label="Fylo - Home">
-        <img src="./images/logo-white.svg" alt="Fylo." class="footer__logo" width="170" height="50">
-      </a>
-      <div class="footer__container">
-        <ul class="info">
-          <li class="info__item">
-            <img src="./images/icon-phone.svg" alt="" class="info__icon" aria-hidden="true" width="18" height="18">
-            <address class="info__address">
-              <a href="tel:+15431234567" class="info__link">Phone: +1-543-123-4567</a>
-            </address>
-          </li>
-          <li class="info__item">
-            <img src="./images/icon-email.svg" alt="" class="info__icon" aria-hidden="true" width="18" height="18">
-            <address class="info__address">
-              <a href="mailto:example@fylo.com" class="info__link">example@fylo.com</a>
-            </address>
-         </li>
-       </ul>
-        <nav class="footer__navigation" aria-label="secondary">
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a href="#" class="footer__link">About Us</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Jobs</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Press</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Blog</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Contact Us</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Terms</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Privacy</a>
-          </li>
-        </ul>
-      </nav>
-        <ul class="social">
-          <li class="social__item">
-            <a href="https://www.facebook.com" class="social__link" aria-label="Facebook." rel="noopener noreferrer" target="_blank"></a>
-          </li>
-          <li class="social__item">
-            <a href="https://www.twitter.com" class="social__link" aria-label="Twitter." rel="noopener noreferrer" target="_blank"></a>
-          </li>
-          <li class="social__item">
-            <a href="https://www.instagram.com" class="social__link" aria-label="Instagram." rel="noopener noreferrer" target="_blank"></a>
-          </li>
-        </ul>
-      </div>
-      <!-- Flaticon Attribute -->
-      <p class="attribute">Left quote icon made by <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer" title="Freepik" class="attribute__link">Freepik</a> from <cite class="attribute__cite"><a class="attribute__link" href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer" title="Flaticon">www.flaticon.com</a></cite></p>
-    </div>
-  </footer>
-  <!-- END OF Footer-->
-</body>
+    </footer>
+    <!-- END OF Footer-->
+  </body>
 </html>

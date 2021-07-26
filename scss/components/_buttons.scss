@@ -21,4 +21,9 @@
   @include on-event {
     background-color: tint($btn-submit-bg, 40%);
   }
+  
+  @include breakpoint-up("small") {
+    flex-basis: rem(200);
+    height: rem(50);
+  }
 }

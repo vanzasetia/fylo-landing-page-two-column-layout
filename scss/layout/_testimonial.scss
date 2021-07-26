@@ -12,6 +12,10 @@
   ;
   background-color: $white;
   padding: rem(20);
+  
+  @include breakpoint-up("small") {
+    max-width: rem(400);
+  }
 }
 
 .testimonial__blockquote {

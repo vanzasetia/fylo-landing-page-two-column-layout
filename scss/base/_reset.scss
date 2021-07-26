@@ -49,6 +49,10 @@ body {
   color: $body-color;
   font-family: 'Open Sans', sans-serif;
   font-size: rem(14);
+  
+  @include breakpoint-up("small") {
+    font-size: rem(16);
+  }
 }
 
 // h1 - h6

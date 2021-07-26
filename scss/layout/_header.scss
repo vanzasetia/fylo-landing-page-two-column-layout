@@ -2,6 +2,10 @@
 
 .header {
   padding: rem(20) 0;
+  
+  @include breakpoint-up("small") {
+    padding: rem(50) 0;
+  }
 }
 
 .header .container {
@@ -14,6 +18,9 @@
   flex-basis: rem(100);
   
   @include focus-visible;
+  @include breakpoint-up("small") {
+    flex-basis: rem(200);
+  }
 }
 
 .header__navigation {
@@ -27,6 +34,16 @@
   @supports not (gap: rem(16)) {
     & > *:not(:last-child) {
       margin-right: rem(16);
+    }
+  }
+  
+  @include breakpoint-up("small") {
+    gap: rem(32);
+    
+    @supports not (gap: rem(32)) {
+      & > *:not(:last-child) {
+        margin-right: rem(32);
+      }
     }
   }
 }

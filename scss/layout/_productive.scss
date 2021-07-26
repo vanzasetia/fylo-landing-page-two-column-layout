@@ -9,12 +9,38 @@
 .productive .container {
   display: flex;
   flex-direction: column-reverse;
+  
+  @include breakpoint-up("small") {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: rem(40);
+    
+    @supports not (gap: rem(40)) {
+      & > *:first-child {
+        margin-right: rem(40);
+      }
+    }
+  }
+}
+
+.productive__text {
+  
+  @include breakpoint-up("small") {
+    flex-basis: 50%;
+    text-align: left;
+  }
 }
 
 .productive__title {
   margin-bottom: rem(28);
   text-align: center;
   font-size: rem(18);
+  
+  @include breakpoint-up("small") {
+    text-align: left;
+    font-size: rem(40);
+  }
 }
 
 .productive__description {
@@ -38,8 +64,19 @@
     background-image: url("../images/icon-arrow-hover.svg");
     color: tint($productive-link-color, 25%);
   }
+  
+  @include breakpoint-up("small") {
+    font-size: rem(14);
+  }
 }
 
 .productive__image {
+  margin-right: auto;
   margin-bottom: rem(60);
+  margin-left: auto;
+  
+  @include breakpoint-up("small") {
+    margin: 0;
+    flex-basis: 50%;
+  }
 }

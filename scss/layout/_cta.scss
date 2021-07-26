@@ -6,4 +6,30 @@
   text-align: center;
   
   @include set-background($cta-bg);
+  @include breakpoint-up("small") {
+    text-align: left;
+  }
+}
+
+.cta .container {
+  
+  @include breakpoint-up("small") {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.cta__text {
+  
+ @include breakpoint-up("small") {
+    flex-basis: 40%;
+  }
+}
+
+.cta__title {
+  
+  @include breakpoint-up("small") {
+    font-size: rem(36);
+  }
 }
