@@ -92,7 +92,7 @@ I also used [Mailgo](https://mailgo.dev/), which is a light JavaScript library f
 * [Preload web fonts to improve loading speed](https://web.dev/codelab-preload-web-fonts/)
 * [Prevent layout shifting and flashes of invisible text (FOIT) by preloading optional fonts](https://web.dev/preload-optional-fonts/)
 * [Font Converter from any format to any format that you want](https://www.fontconverter.io/en)
-* [<footer> | MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer#accessibility_concerns)
+* [ Footer Tag | MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer#accessibility_concerns)
 
 ## Continued development
 I will take people feedback and improve this solution.
