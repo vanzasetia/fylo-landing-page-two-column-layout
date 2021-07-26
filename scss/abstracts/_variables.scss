@@ -42,9 +42,9 @@ $productive-bg: $light-grayish-blue;
 // Breakpoints
 // Note: If you user font-size setting is 16px, then this 'em' is equal to this in 'px'
 $breakpoints-up: (
-  'tiny': 20em, // => 320px
+  'tiny': 20.0625em, // => 321px
 );
 
 $breakpoints-down: (
-  'tiny': 19.9375em, // => 319px
+  'tiny': 20em, // => 320px
 );
