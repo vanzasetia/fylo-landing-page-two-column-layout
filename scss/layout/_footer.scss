@@ -1,0 +1,130 @@
+@use '../abstracts' as *;
+
+.footer {
+  padding: rem(90) 0;
+  font-size: rem(16);
+  
+  @include set-background($footer-bg);
+}
+
+.footer__home {
+  
+  @include focus-visible;
+}
+
+.footer__logo {
+  display: inline-block;
+  height: rem(50);
+  width: rem(170);
+}
+
+.info {
+  margin: rem(40) 0;
+}
+
+.info__item {
+  display: flex;
+  align-items: center;
+  gap: rem(20);
+}
+
+.info__item:not(:last-child) {
+  margin-bottom: rem(20);
+}
+
+.info__link {
+  color: inherit;
+  
+  @include focus-visible;
+  @include on-event {
+    color: tint($bright-blue, 40%);
+  }
+}
+
+.footer__navigation {
+  margin: rem(40) 0;
+}
+
+.footer__item:nth-child(5) {
+  margin-top: rem(30);
+}
+
+.footer__link {
+  line-height: 2.5;
+  color: inherit;
+  
+  @include focus-visible;
+  @include on-event {
+    color: tint($bright-blue, 40%);
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: rem(20);
+  
+  @supports not (gap: rem(20)) {
+    & > *:not(:last-child) {
+      margin-right: rem(20);
+    }
+  }
+}
+
+.social__item:first-child .social__link {
+  background-image: url("../images/facebook.svg");
+}
+
+.social__item:nth-child(2) .social__link {
+  background-image: url("../images/twitter.svg");
+}
+
+.social__item:last-child .social__link {
+  background-image: url("../images/instagram.svg");
+}
+
+.social__link {
+  display: inline-block;
+  border: rem(1) solid $white;
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: rem(50);
+  width: rem(50);
+  
+  @include focus-visible;
+  @include on-event {
+    border-color: tint($bright-blue, 40%);
+  }
+}
+
+.social__item:first-child .social__link:hover {
+  background-image: url("../images/facebook-hover.svg");
+}
+
+.social__item:nth-child(2) .social__link:hover {
+  background-image: url("../images/twitter-hover.svg");
+}
+
+.social__item:last-child .social__link:hover {
+  background-image: url("../images/instagram-hover.svg");
+}
+
+.attribute {
+  margin-top: rem(32);
+  text-align: center;
+}
+
+.attribute__link {
+  color: #4AD295;
+  font-weight: 700;
+  
+  @include focus-visible;
+  @include on-event {
+    text-decoration: underline;
+  }
+}
+
+.attribute__cite {
+  font-style: normal;
+}
