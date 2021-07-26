@@ -64,7 +64,7 @@ The `style-guide.md` said that you only need an **Open Sans** font family with 4
 When I started building the mobile layout, I realized that the layout on mobile design wasn't consistent. This section had less width than the other section. So, I didn't follow the mobile design, I was just using the same `.container` as the other section had. That way, the layout is always consistent even in mobile devices 👍.
 
 ### Footer
-For the footer, I use `grid` to make them three columns on desktop view.
+For the footer, I use `grid` to make them three columns on desktop view. I also make the social media circle bigger than the design. It's also an accessibility, to make sure that they are easy to click by the user.
 
 ## What I Learned
 * Using `rel="preload"` and `font-display: optional` to prevent shifting layout on font family. But I used `font-display: swap` since if you import it using `link` tags, there is this `&display=swap`.
