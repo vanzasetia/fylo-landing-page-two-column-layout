@@ -97,7 +97,7 @@ $-red: rgb(255, 0, 0);
   border-color: $-red;
 }
 
-.form__email:focus:invalid ~ .form__placeholder .form__error-message {
+.form__email:invalid:not(:placeholder-shown):not(:focus) ~ .form__placeholder .form__error-message {
   display: block;
 }
 
