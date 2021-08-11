@@ -623,7 +623,7 @@ img {
   outline: 0.125rem dashed #51bdac;
   outline-offset: 0.3125rem;
 }
-.btn--submit:hover, .btn--submit:active, .btn--submit:focus {
+.btn--submit:hover, .btn--submit:active {
   background-color: #83a3fb;
 }
 @media screen and (min-width: 74.1875em) {
@@ -693,7 +693,7 @@ img {
   outline: 0.125rem dashed #51bdac;
   outline-offset: 0.3125rem;
 }
-.header__link:hover, .header__link:active, .header__link:focus {
+.header__link:hover, .header__link:active {
   border-bottom: 0.0625rem solid #070439;
 }
 @media screen and (max-width: 20em) {
@@ -832,7 +832,7 @@ img {
   outline: 0.125rem dashed #51bdac;
   outline-offset: 0.3125rem;
 }
-.productive__link:hover, .productive__link:active, .productive__link:focus {
+.productive__link:hover, .productive__link:active {
   border-color: #6db7ab;
   background-image: url("../images/icon-arrow-hover.svg");
   color: #6db7ab;
@@ -986,7 +986,7 @@ img {
   outline: 0.125rem dashed #51bdac;
   outline-offset: 0.3125rem;
 }
-.info__link:hover, .info__link:active, .info__link:focus {
+.info__link:hover, .info__link:active {
   color: #83a3fb;
 }
 
@@ -1012,7 +1012,7 @@ img {
   outline: 0.125rem dashed #51bdac;
   outline-offset: 0.3125rem;
 }
-.footer__link:hover, .footer__link:active, .footer__link:focus {
+.footer__link:hover, .footer__link:active {
   color: #83a3fb;
 }
 
@@ -1053,7 +1053,7 @@ img {
   outline: 0.125rem dashed #51bdac;
   outline-offset: 0.3125rem;
 }
-.social__link:hover, .social__link:active, .social__link:focus {
+.social__link:hover, .social__link:active {
   border-color: #83a3fb;
 }
 
@@ -1087,7 +1087,7 @@ img {
   outline: 0.125rem dashed #51bdac;
   outline-offset: 0.3125rem;
 }
-.attribute__link:hover, .attribute__link:active, .attribute__link:focus {
+.attribute__link:hover, .attribute__link:active {
   text-decoration: underline;
 }
 
